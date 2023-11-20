@@ -1,0 +1,17 @@
+/*
+ * uart_communiation_fsm.c
+ *
+ *  Created on: Nov 19, 2023
+ *      Author: Acer
+ */
+
+#include "uart_communiation_fsm.h"
+
+void uart_communiation_fsm(){
+	switch (status_communication){
+	case
+	}
+}
+
+
+

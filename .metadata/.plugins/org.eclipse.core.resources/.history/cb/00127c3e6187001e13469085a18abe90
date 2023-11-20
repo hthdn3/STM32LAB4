@@ -1,0 +1,18 @@
+/*
+ * command_parser_fsm.c
+ *
+ *  Created on: Nov 19, 2023
+ *      Author: Acer
+ */
+
+#include "command_parser_fsm.h"
+#include "main.h"
+
+uint8_t command_length;
+uint8_t command_data[];
+uint8_t command_flag = 0;
+
+void command_parser_fsm (){
+
+}
+

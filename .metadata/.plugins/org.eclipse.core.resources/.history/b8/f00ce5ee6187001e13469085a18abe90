@@ -1,0 +1,43 @@
+/*
+ * command_parser_fsm.c
+ *
+ *  Created on: Nov 19, 2023
+ *      Author: Acer
+ */
+
+#include "command_parser_fsm.h"
+#include "main.h"
+
+uint8_t command_length;
+uint8_t command_data[10];
+uint8_t command_flag = 0;
+
+void command_parser_fsm (){
+	switch (sst_c){
+	        case wait:
+	            if (temp == 0x21 ) {
+	                length_of_command = 0;
+	                sst_c = receive ;
+	            }
+	            break;
+
+	        case receive:
+	            if (temp != 0x21 && temp != 0x23 ) {
+	                command_data [length_of_command++] = temp;
+	            }
+	            if (temp == 0x21 ) {
+	                length_of_command = 0;
+	            }
+
+	            if (temp == 0x23 ) {
+	                status_cmd = wait;
+	                command_flag = 1;
+	            }
+	            break;
+
+	        default:
+	            break;
+	    }
+	}
+
+

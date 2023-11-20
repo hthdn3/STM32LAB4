@@ -1,0 +1,3 @@
+uart_communiation_fsm.c:14:6:is_reset	4	static
+uart_communiation_fsm.c:20:6:is_ok	4	static
+uart_communiation_fsm.c:26:6:uart_communiation_fsm	8	static

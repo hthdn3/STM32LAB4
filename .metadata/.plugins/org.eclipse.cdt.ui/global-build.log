@@ -1,0 +1,288 @@
+12:44:35 **** Incremental Build of configuration Debug for project lab4 ****
+make -j16 all 
+arm-none-eabi-g++ -o "lab4.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE_1.7.0\LAB4\lab4\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: lab4.elf
+ 
+arm-none-eabi-size   lab4.elf 
+arm-none-eabi-objdump -h -S  lab4.elf  > "lab4.list"
+arm-none-eabi-objcopy  -O ihex  lab4.elf  "lab4.hex"
+   text	   data	    bss	    dec	    hex	filename
+  15744	    120	   1952	  17816	   4598	lab4.elf
+arm-none-eabi-objcopy  -O binary  lab4.elf  "lab4.bin"
+Finished building: default.size.stdout
+ 
+Finished building: lab4.hex
+Finished building: lab4.bin
+ 
+ 
+Finished building: lab4.list
+ 
+12:47:41 **** Incremental Build of configuration Debug for project lab4 ****
+make -j16 all 
+arm-none-eabi-size   lab4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15744	    120	   1952	  17816	   4598	lab4.elf
+Finished building: default.size.stdout
+ 
+12:48:45 **** Incremental Build of configuration Debug for project lab4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "lab4.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE_1.7.0\LAB4\lab4\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: lab4.elf
+ 
+arm-none-eabi-size   lab4.elf 
+arm-none-eabi-objdump -h -S  lab4.elf  > "lab4.list"
+arm-none-eabi-objcopy  -O ihex  lab4.elf  "lab4.hex"
+   text	   data	    bss	    dec	    hex	filename
+  15756	    120	   1952	  17828	   45a4	lab4.elf
+arm-none-eabi-objcopy  -O binary  lab4.elf  "lab4.bin"
+Finished building: default.size.stdout
+ 
+Finished building: lab4.hex
+Finished building: lab4.bin
+ 
+ 
+Finished building: lab4.list
+ 
+12:50:42 **** Incremental Build of configuration Debug for project lab4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "lab4.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE_1.7.0\LAB4\lab4\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: lab4.elf
+ 
+arm-none-eabi-size   lab4.elf 
+arm-none-eabi-objdump -h -S  lab4.elf  > "lab4.list"
+arm-none-eabi-objcopy  -O ihex  lab4.elf  "lab4.hex"
+   text	   data	    bss	    dec	    hex	filename
+  15764	    120	   1952	  17836	   45ac	lab4.elf
+arm-none-eabi-objcopy  -O binary  lab4.elf  "lab4.bin"
+Finished building: default.size.stdout
+ 
+Finished building: lab4.hex
+Finished building: lab4.bin
+ 
+ 
+Finished building: lab4.list
+ 
+12:57:55 **** Incremental Build of configuration Debug for project lab4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "lab4.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE_1.7.0\LAB4\lab4\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: lab4.elf
+ 
+arm-none-eabi-size   lab4.elf 
+arm-none-eabi-objdump -h -S  lab4.elf  > "lab4.list"
+arm-none-eabi-objcopy  -O ihex  lab4.elf  "lab4.hex"
+   text	   data	    bss	    dec	    hex	filename
+  16304	    120	   1952	  18376	   47c8	lab4.elf
+arm-none-eabi-objcopy  -O binary  lab4.elf  "lab4.bin"
+Finished building: default.size.stdout
+ 
+Finished building: lab4.hex
+Finished building: lab4.bin
+ 
+ 
+Finished building: lab4.list
+ 
+13:11:07 **** Incremental Build of configuration Debug for project lab4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/command_parser_fsm.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/command_parser_fsm.d" -MT"Core/Src/command_parser_fsm.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/command_parser_fsm.o"
+arm-none-eabi-gcc "../Core/Src/global.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/global.d" -MT"Core/Src/global.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/global.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/uart_communiation_fsm.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/uart_communiation_fsm.d" -MT"Core/Src/uart_communiation_fsm.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/uart_communiation_fsm.o"
+../Core/Src/uart_communiation_fsm.c: In function 'is_reset':
+../Core/Src/uart_communiation_fsm.c:16:10: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   16 |   return 1;
+      |          ^
+../Core/Src/uart_communiation_fsm.c:14:6: note: declared here
+   14 | void is_reset(){
+      |      ^~~~~~~~
+../Core/Src/uart_communiation_fsm.c:18:9: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   18 |  return 0;
+      |         ^
+../Core/Src/uart_communiation_fsm.c:14:6: note: declared here
+   14 | void is_reset(){
+      |      ^~~~~~~~
+../Core/Src/uart_communiation_fsm.c: In function 'is_ok':
+../Core/Src/uart_communiation_fsm.c:22:10: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   22 |   return 1;
+      |          ^
+../Core/Src/uart_communiation_fsm.c:20:6: note: declared here
+   20 | void is_ok(){
+      |      ^~~~~
+../Core/Src/uart_communiation_fsm.c:24:9: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   24 |  return 0;
+      |         ^
+../Core/Src/uart_communiation_fsm.c:20:6: note: declared here
+   20 | void is_ok(){
+      |      ^~~~~
+../Core/Src/uart_communiation_fsm.c: In function 'uart_communiation_fsm':
+../Core/Src/uart_communiation_fsm.c:31:7: warning: the address of 'is_reset' will always evaluate as 'true' [-Waddress]
+   31 |    if((is_reset)){
+      |       ^
+../Core/Src/uart_communiation_fsm.c:34:35: error: 'hadc1' undeclared (first use in this function)
+   34 |     ADC_value = HAL_ADC_GetValue(&hadc1);
+      |                                   ^~~~~
+../Core/Src/uart_communiation_fsm.c:34:35: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/uart_communiation_fsm.c:42:23: error: 'huart2' undeclared (first use in this function)
+   42 |    HAL_UART_Transmit(&huart2, (void *) str, sprintf(str, "!ADC=%.4d#", ADC_value), 1000);
+      |                       ^~~~~~
+../Core/Src/uart_communiation_fsm.c:42:67: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   42 |    HAL_UART_Transmit(&huart2, (void *) str, sprintf(str, "!ADC=%.4d#", ADC_value), 1000);
+      |                                                                ~~~^    ~~~~~~~~~
+      |                                                                   |    |
+      |                                                                   int  uint32_t {aka long unsigned int}
+      |                                                                %.4ld
+../Core/Src/uart_communiation_fsm.c:47:6: warning: the address of 'is_ok' will always evaluate as 'true' [-Waddress]
+   47 |   if((is_ok)){
+      |      ^
+make: *** [Core/Src/subdir.mk:46: Core/Src/uart_communiation_fsm.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+13:12:13 **** Incremental Build of configuration Debug for project lab4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/command_parser_fsm.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/command_parser_fsm.d" -MT"Core/Src/command_parser_fsm.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/command_parser_fsm.o"
+arm-none-eabi-gcc "../Core/Src/global.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/global.d" -MT"Core/Src/global.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/global.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/uart_communiation_fsm.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/uart_communiation_fsm.d" -MT"Core/Src/uart_communiation_fsm.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/uart_communiation_fsm.o"
+../Core/Src/uart_communiation_fsm.c: In function 'is_reset':
+../Core/Src/uart_communiation_fsm.c:16:10: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   16 |   return 1;
+      |          ^
+../Core/Src/uart_communiation_fsm.c:14:6: note: declared here
+   14 | void is_reset(){
+      |      ^~~~~~~~
+../Core/Src/uart_communiation_fsm.c:18:9: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   18 |  return 0;
+      |         ^
+../Core/Src/uart_communiation_fsm.c:14:6: note: declared here
+   14 | void is_reset(){
+      |      ^~~~~~~~
+../Core/Src/uart_communiation_fsm.c: In function 'is_ok':
+../Core/Src/uart_communiation_fsm.c:22:10: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   22 |   return 1;
+      |          ^
+../Core/Src/uart_communiation_fsm.c:20:6: note: declared here
+   20 | void is_ok(){
+      |      ^~~~~
+../Core/Src/uart_communiation_fsm.c:24:9: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   24 |  return 0;
+      |         ^
+../Core/Src/uart_communiation_fsm.c:20:6: note: declared here
+   20 | void is_ok(){
+      |      ^~~~~
+../Core/Src/uart_communiation_fsm.c: In function 'uart_communiation_fsm':
+../Core/Src/uart_communiation_fsm.c:31:7: warning: the address of 'is_reset' will always evaluate as 'true' [-Waddress]
+   31 |    if((is_reset)){
+      |       ^
+../Core/Src/uart_communiation_fsm.c:42:67: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   42 |    HAL_UART_Transmit(&huart2, (void *) str, sprintf(str, "!ADC=%.4d#", ADC_value), 1000);
+      |                                                                ~~~^    ~~~~~~~~~
+      |                                                                   |    |
+      |                                                                   int  uint32_t {aka long unsigned int}
+      |                                                                %.4ld
+../Core/Src/uart_communiation_fsm.c:47:6: warning: the address of 'is_ok' will always evaluate as 'true' [-Waddress]
+   47 |   if((is_ok)){
+      |      ^
+arm-none-eabi-g++ -o "lab4.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE_1.7.0\LAB4\lab4\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: lab4.elf
+ 
+arm-none-eabi-size   lab4.elf 
+arm-none-eabi-objdump -h -S  lab4.elf  > "lab4.list"
+arm-none-eabi-objcopy  -O ihex  lab4.elf  "lab4.hex"
+   text	   data	    bss	    dec	    hex	filename
+  16304	    120	   1952	  18376	   47c8	lab4.elf
+arm-none-eabi-objcopy  -O binary  lab4.elf  "lab4.bin"
+Finished building: default.size.stdout
+ 
+Finished building: lab4.hex
+Finished building: lab4.bin
+ 
+ 
+Finished building: lab4.list
+ 
+13:12:19 **** Incremental Build of configuration Debug for project lab4 ****
+make -j16 all 
+arm-none-eabi-size   lab4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16304	    120	   1952	  18376	   47c8	lab4.elf
+Finished building: default.size.stdout
+ 
+13:13:04 **** Incremental Build of configuration Debug for project lab4 ****
+make -j16 all 
+arm-none-eabi-size   lab4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16304	    120	   1952	  18376	   47c8	lab4.elf
+Finished building: default.size.stdout
+ 
+16:46:25 **** Incremental Build of configuration Debug for project lab4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/command_parser_fsm.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/command_parser_fsm.d" -MT"Core/Src/command_parser_fsm.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/command_parser_fsm.o"
+arm-none-eabi-gcc "../Core/Src/global.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/global.d" -MT"Core/Src/global.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/global.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/uart_communiation_fsm.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/uart_communiation_fsm.d" -MT"Core/Src/uart_communiation_fsm.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/uart_communiation_fsm.o"
+../Core/Src/uart_communiation_fsm.c: In function 'is_reset':
+../Core/Src/uart_communiation_fsm.c:16:10: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   16 |   return 1;
+      |          ^
+../Core/Src/uart_communiation_fsm.c:14:6: note: declared here
+   14 | void is_reset(){
+      |      ^~~~~~~~
+../Core/Src/uart_communiation_fsm.c:18:9: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   18 |  return 0;
+      |         ^
+../Core/Src/uart_communiation_fsm.c:14:6: note: declared here
+   14 | void is_reset(){
+      |      ^~~~~~~~
+../Core/Src/uart_communiation_fsm.c: In function 'is_ok':
+../Core/Src/uart_communiation_fsm.c:22:10: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   22 |   return 1;
+      |          ^
+../Core/Src/uart_communiation_fsm.c:20:6: note: declared here
+   20 | void is_ok(){
+      |      ^~~~~
+../Core/Src/uart_communiation_fsm.c:24:9: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   24 |  return 0;
+      |         ^
+../Core/Src/uart_communiation_fsm.c:20:6: note: declared here
+   20 | void is_ok(){
+      |      ^~~~~
+../Core/Src/command_parser_fsm.c:15:12: error: 'a' undeclared here (not in a function)
+   15 | int buffer[a];
+      |            ^
+../Core/Src/uart_communiation_fsm.c: In function 'uart_communiation_fsm':
+../Core/Src/uart_communiation_fsm.c:31:7: warning: the address of 'is_reset' will always evaluate as 'true' [-Waddress]
+   31 |    if((is_reset)){
+      |       ^
+../Core/Src/uart_communiation_fsm.c:42:67: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   42 |    HAL_UART_Transmit(&huart2, (void *) str, sprintf(str, "!ADC=%.4d#", ADC_value), 1000);
+      |                                                                ~~~^    ~~~~~~~~~
+      |                                                                   |    |
+      |                                                                   int  uint32_t {aka long unsigned int}
+      |                                                                %.4ld
+../Core/Src/uart_communiation_fsm.c:47:6: warning: the address of 'is_ok' will always evaluate as 'true' [-Waddress]
+   47 |   if((is_ok)){
+      |      ^
+make: *** [Core/Src/subdir.mk:46: Core/Src/command_parser_fsm.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:46:30 **** Incremental Build of configuration Debug for project lab4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/command_parser_fsm.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/command_parser_fsm.d" -MT"Core/Src/command_parser_fsm.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/command_parser_fsm.o"
+arm-none-eabi-g++ -o "lab4.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE_1.7.0\LAB4\lab4\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: lab4.elf
+ 
+arm-none-eabi-size   lab4.elf 
+arm-none-eabi-objdump -h -S  lab4.elf  > "lab4.list"
+arm-none-eabi-objcopy  -O ihex  lab4.elf  "lab4.hex"
+   text	   data	    bss	    dec	    hex	filename
+  16304	    120	   1952	  18376	   47c8	lab4.elf
+arm-none-eabi-objcopy  -O binary  lab4.elf  "lab4.bin"
+Finished building: default.size.stdout
+ 
+Finished building: lab4.bin
+Finished building: lab4.hex
+ 
+ 
+Finished building: lab4.list
+ 

@@ -1,0 +1,19 @@
+/*
+ * global.h
+ *
+ *  Created on: Nov 19, 2023
+ *      Author: Acer
+ */
+
+#ifndef INC_GLOBAL_H_
+#define INC_GLOBAL_H_
+
+#include "software_timer.h"
+#include " main.h"
+
+uint8_t command_length;
+uint8_t command_data[10];
+uint8_t command_flag = 0;
+
+
+#endif /* INC_GLOBAL_H_ */

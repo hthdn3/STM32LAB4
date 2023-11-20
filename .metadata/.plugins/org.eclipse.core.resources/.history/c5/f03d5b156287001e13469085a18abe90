@@ -1,0 +1,29 @@
+/*
+ * global.h
+ *
+ *  Created on: Nov 19, 2023
+ *      Author: Acer
+ */
+
+#ifndef INC_GLOBAL_H_
+#define INC_GLOBAL_H_
+
+#include "software_timer.h"
+#include "main.h"
+
+uint8_t command_length;
+uint8_t command_data[10];
+uint8_t command_flag = 0;
+
+#define wait			0
+#define receive 			1
+
+#define WAIT_CMD_RST			10
+#define SEND_ADC				11
+
+extern int status_cmd;
+extern int status_communicate;
+extern uint8_t temp;
+
+extern sst_c;
+#endif /* INC_GLOBAL_H_ */
